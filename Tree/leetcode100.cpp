@@ -26,7 +26,7 @@ struct TreeNode {
 class Solution {
 public:
     bool isSameTree(TreeNode* p, TreeNode* q) {
-        //把第二个else if的条件经过第一个过滤一下，是一个妙招
+        //把第二个else if的条件经过第一个过滤一下，是一个妙招，第三个自然也是类似
         if (p == nullptr && q == nullptr) {
             return true;
         } else if (p == nullptr || q == nullptr) {
